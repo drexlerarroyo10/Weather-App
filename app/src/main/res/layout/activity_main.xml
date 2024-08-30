@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_image"
+    tools:context=".MainActivity">
+
+    <SearchView
+        android:id="@+id/searchView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="150dp"
+        android:iconifiedByDefault="false"
+        android:queryHint="Search city"
+        android:padding="12dp"
+        android:background="@drawable/searchview_background"/>
+
+    <TextView
+android:id="@+id/weatherInfo"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:layout_below="@id/searchView"
+android:layout_centerHorizontal="true"
+android:layout_marginTop="24dp"
+android:textSize="22sp"
+android:textColor="#ffffff"
+    android:text="Weather info will appear here"
+    android:padding="12dp"
+    android:background="#80000000"
+    android:elevation="4dp"
+    android:textAlignment="center" />
+
+<TextView
+android:id="@+id/errorInfo"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:layout_below="@id/weatherInfo"
+android:layout_centerHorizontal="true"
+android:layout_marginTop="24dp"
+android:textSize="20sp"
+android:textColor="#FF4081" />
+
+    </RelativeLayout>
